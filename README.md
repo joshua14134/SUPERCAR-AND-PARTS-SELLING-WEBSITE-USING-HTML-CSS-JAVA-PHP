@@ -35,7 +35,7 @@ This project is a web application for selling supercars and accessories, providi
 ## Installation
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/joshua14134/supercar.git
+   git clone: https://github.com/joshua14134/supercar.git
    cd supercar
    ```
 
