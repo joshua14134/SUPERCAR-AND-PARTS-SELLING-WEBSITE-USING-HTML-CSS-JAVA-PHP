@@ -89,6 +89,7 @@ Here are some screenshots of the application:
 ├── edit_user.php
 ├── footer.php
 ├── header.php
+├── home.php
 ├── index.php
 ├── login_form.php
 ├── logout.php
