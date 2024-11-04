@@ -1,0 +1,131 @@
+//* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%; /* Use full width of the viewport */
+    max-width: 900px; /* Max width */
+    margin: 0 auto;
+}
+
+/* Standard Container Class for Consistent Sizing */
+.standard-container {
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height for uniformity */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto;
+    padding: 20px; /* Optional padding */
+    box-sizing: border-box; /* Include padding in the height and width */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+}
+
+/* Image and Video Styles */
+.centered-img, .centered-video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensure it does not exceed container width */
+    height: auto;
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Swiper Styles */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007BFF;
+}
+
+/* About Section */
+.about {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about__description {
+    margin-bottom: 20px;
+}
+
+.about__img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about__card {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+}
+
+.about__card-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.about__card-description {
+    margin: 10px 0 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Additional Info Section */
+.additional-info {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+}

@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: "assets/img/background.jpg"; /* Add your background image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.form-container {
+    background: hsl(279, 89%, 7%);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.error-msg {
+    color: #dc3545; /* Bootstrap danger color for error messages */
+}
+
+/* Additional styles for buttons and inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #80bdff; /* Light blue border on focus */
+    outline: none;
+}
+
+.form-btn {
+    background: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
