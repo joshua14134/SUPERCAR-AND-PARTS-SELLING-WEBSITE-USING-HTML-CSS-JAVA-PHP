@@ -92,7 +92,7 @@ Administrators can:
 ### 👤 User Profile
 
 <p align="center">
-  <img src="profile.png" width="900">
+  <img src="profileuser.png" width="900">
 </p>
 
 ---
@@ -100,7 +100,7 @@ Administrators can:
 ### 📊 Admin Dashboard
 
 <p align="center">
-  <img src="admin.png" width="900">
+  <img src="adminlogin.png" width="900">
 </p>
 
 ---
