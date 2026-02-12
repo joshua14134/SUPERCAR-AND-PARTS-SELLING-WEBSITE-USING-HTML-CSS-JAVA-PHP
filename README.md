@@ -1,33 +1,41 @@
 # 🚗 Supercar & Accessories E-Commerce Website
 
-A dynamic full-stack web application for selling luxury supercars and automotive accessories. Built using **PHP, MySQL, HTML, CSS, and JavaScript**, this platform provides secure authentication, shopping cart functionality, checkout processing, and a complete admin dashboard for inventory and user management.
+A full-stack dynamic web application for selling luxury supercars and automotive accessories. Built using **PHP and MySQL**, this system includes secure authentication, shopping cart functionality, checkout processing, and a powerful admin dashboard.
 
 ---
 
-## 🌟 Project Highlights
+## 🌟 Project Overview
 
-* 🔐 Secure User Authentication System
-* 🛒 Fully Functional Shopping Cart
-* 💳 Checkout & Order Processing
-* 👤 Profile Management System
-* 📊 Admin Dashboard with CRUD Operations
-* 📱 Responsive & Modern UI
+This platform allows customers to:
+
+* Browse supercars and accessories
+* Add items to cart
+* Complete purchases
+* Manage profiles
+* View order confirmations
+
+Administrators can:
+
+* Manage users
+* Manage products
+* Monitor transactions
+* Control inventory
 
 ---
 
-## 🧩 Features
+## ✨ Features
 
-### 👤 Customer Side
+### 👤 Customer Features
 
 * User Registration & Login
-* Browse Supercars & Accessories
+* Profile Management
+* Browse Products
 * Add to Cart / Remove from Cart
-* Checkout & Payment Processing
-* View Order Confirmation
-* Edit Profile Details
-* Responsive Interface
+* Checkout System
+* Order Confirmation Page
+* Responsive Design
 
-### 🛠️ Admin Side
+### 🛠️ Admin Features
 
 * Admin Login Panel
 * Dashboard Overview
@@ -38,15 +46,62 @@ A dynamic full-stack web application for selling luxury supercars and automotive
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
-| Category        | Technology              |
+| Layer           | Technology              |
 | --------------- | ----------------------- |
 | Frontend        | HTML5, CSS3, JavaScript |
 | Backend         | PHP                     |
 | Database        | MySQL                   |
-| Server          | Apache (XAMPP/WAMP)     |
+| Server          | Apache (XAMPP / WAMP)   |
 | Version Control | Git & GitHub            |
+
+---
+
+## 📸 Application Screenshots
+
+> Make sure your screenshots are stored inside:
+> `assets/screenshots/`
+
+---
+
+### 🏠 Home Page
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="900">
+</p>
+
+---
+
+### 🔐 Login Page
+
+<p align="center">
+  <img src="assets/screenshots/login.png" width="900">
+</p>
+
+---
+
+### 🛠️ Service Page
+
+<p align="center">
+  <img src="assets/screenshots/service.png" width="900">
+</p>
+
+---
+
+### 👤 User Profile
+
+<p align="center">
+  <img src="assets/screenshots/profile.png" width="900">
+</p>
+
+---
+
+### 📊 Admin Dashboard
+
+<p align="center">
+  <img src="assets/screenshots/admin.png" width="900">
+</p>
 
 ---
 
@@ -56,7 +111,8 @@ A dynamic full-stack web application for selling luxury supercars and automotive
 /supercar
 │
 ├── assets/
-│   └── avatars/
+│   ├── avatars/
+│   └── screenshots/
 │
 ├── about.php
 ├── admin_page.php
@@ -88,7 +144,7 @@ A dynamic full-stack web application for selling luxury supercars and automotive
 
 ---
 
-## ⚙️ Installation Instructions
+## ⚙️ Installation
 
 ### 1️⃣ Clone Repository
 
@@ -97,28 +153,28 @@ git clone https://github.com/joshua14134/supercar.git
 cd supercar
 ```
 
-### 2️⃣ Create Database
+### 2️⃣ Setup Database
 
 * Open phpMyAdmin
-* Create a database (e.g., `supercar_db`)
+* Create database: `supercar_db`
 * Import the provided SQL file
 
-### 3️⃣ Configure Database Connection
+### 3️⃣ Configure Database
 
-Open `config.php` and update:
+Edit `config.php`:
 
 ```php
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "superwheel";
+$database = "supercar_db";
 ```
 
-### 4️⃣ Run the Project
+### 4️⃣ Run Project
 
-* Move folder to `htdocs` (XAMPP)
+* Move project folder to `htdocs`
 * Start Apache & MySQL
-* Visit:
+* Open in browser:
 
 ```
 http://localhost/supercar
@@ -126,26 +182,24 @@ http://localhost/supercar
 
 ---
 
-## 🔒 Security Enhancements (Recommended)
+## 🔐 Security Improvements (Recommended)
 
-For production deployment:
-
-* Use `password_hash()` for storing passwords
-* Implement prepared statements (PDO/MySQLi)
+* Use `password_hash()` for passwords
+* Use prepared statements (PDO/MySQLi)
 * Add CSRF protection
 * Validate and sanitize inputs
-* Regenerate session IDs on login
+* Regenerate session IDs
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Enhancements
 
-* Online Payment Gateway Integration
-* Email Verification System
+* Payment Gateway Integration
+* Order Tracking
 * Product Search & Filters
-* Wishlist Feature
+* Wishlist System
+* Email Verification
 * Sales Analytics Dashboard
-* Order Tracking System
 
 ---
 
