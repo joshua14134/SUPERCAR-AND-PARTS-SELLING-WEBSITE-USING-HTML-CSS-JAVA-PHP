@@ -1,119 +1,154 @@
-# Supercar and Accessories Selling Website
+# 🚗 Supercar & Accessories E-Commerce Website
 
-## Table of Contents
-- [Project Description](#project-description)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Images](#images)
-- [File Structure](#file-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+A dynamic full-stack web application for selling luxury supercars and automotive accessories. Built using **PHP, MySQL, HTML, CSS, and JavaScript**, this platform provides secure authentication, shopping cart functionality, checkout processing, and a complete admin dashboard for inventory and user management.
 
-## Project Description
-This project is a web application for selling supercars and accessories, providing a user-friendly interface for browsing, purchasing, and managing user accounts. It includes features for both customers and administrators to manage inventory, user accounts, and transactions.
+---
 
-## Features
-- **User Registration and Login:** Secure user authentication system.
-- **Product Browsing:** Users can view and search through a catalog of supercars and accessories.
-- **Shopping Cart:** Add items to the shopping cart for purchase.
-- **Checkout Process:** Complete purchases through a secure checkout page.
-- **Admin Dashboard:** Administrators can manage products, users, and orders.
-- **Profile Management:** Users can view and edit their profiles.
-- **Order History:** Users can view their past orders.
-- **Responsive Design:** Mobile-friendly layout for optimal viewing on all devices.
+## 🌟 Project Highlights
 
-## Technologies Used
-- **Front-end:** HTML, CSS, JavaScript
-- **Back-end:** PHP
-- **Database:** MySQL
-- **Version Control:** Git
-- **Deployment:** [GitHub Pages](https://pages.github.com/) or any PHP-compatible web server
+* 🔐 Secure User Authentication System
+* 🛒 Fully Functional Shopping Cart
+* 💳 Checkout & Order Processing
+* 👤 Profile Management System
+* 📊 Admin Dashboard with CRUD Operations
+* 📱 Responsive & Modern UI
 
-## Installation
-1. **Clone the Repository:**
-   ```bash
-   git clone: https://github.com/joshua14134/supercar.git
-   cd supercar
-   ```
+---
 
-2. **Set Up the Database:**
-   - Create a MySQL database and import the SQL schema provided in the `database.sql` file.
+## 🧩 Features
 
-3. **Configure the Database Connection:**
-   - Open `config.php` and update the database connection details.
+### 👤 Customer Side
 
-4. **Run the Application:**
-   - Deploy the project on a local server (e.g., XAMPP, WAMP) or a web server that supports PHP.
+* User Registration & Login
+* Browse Supercars & Accessories
+* Add to Cart / Remove from Cart
+* Checkout & Payment Processing
+* View Order Confirmation
+* Edit Profile Details
+* Responsive Interface
 
-## Usage
-- Navigate to `index.php` to access the home page.
-- Users can register, log in, browse products, add items to their cart, and proceed to checkout.
-- Admins can access the dashboard to manage users and products.
+### 🛠️ Admin Side
 
-## Images
-Here are some screenshots of the application:
+* Admin Login Panel
+* Dashboard Overview
+* Add / Edit / Delete Products
+* Manage Users
+* Delete Users
+* Inventory Control
 
-![Homepage](HOME.png)
-*Homepage of the Supercar Selling Website*
+---
 
-![Indexpage](INDEX.png)
-*Indexpage of the Supercar Selling Website*
+## 🛠️ Technologies Used
 
-![Product Page](product_page.png)
-*Product Listing Page*
+| Category        | Technology              |
+| --------------- | ----------------------- |
+| Frontend        | HTML5, CSS3, JavaScript |
+| Backend         | PHP                     |
+| Database        | MySQL                   |
+| Server          | Apache (XAMPP/WAMP)     |
+| Version Control | Git & GitHub            |
 
-![Admin Dashboard](admin_dashboard.png)
-*Admin Dashboard for Managing Products*
+---
 
-![Login Page](Login_Page.png)
-*User Login Page*
+## 📂 Project Structure
 
-## File Structure
 ```
 /supercar
-├── c_checkout.php
-├── c_login.php
-├── c_logout.php
-├── c_parts.php
-├── c_remove_from_cart.php
-├── c_thank_you.php
+│
+├── assets/
+│   └── avatars/
+│
+├── about.php
+├── admin_page.php
+├── buy.php
+├── c_add_to_cart.php
+├── c_cart.php
 ├── check_name.php
+├── checkout.php
 ├── config.php
 ├── dashboard.php
-├── delete_part.php
 ├── delete_user.php
-├── edit_part.php
 ├── edit_user.php
 ├── footer.php
 ├── header.php
 ├── home.php
 ├── index.php
+├── login.php
 ├── login_form.php
 ├── logout.php
 ├── parts_page.php
 ├── popular.php
+├── process_payment.php
+├── profile.php
 ├── register_form.php
 ├── service.php
-├── user_page.php
-└── view_cart.php
+├── thankyou.php
+└── user_page.php
 ```
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
+---
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## ⚙️ Installation Instructions
 
-## Acknowledgements
-- [PHP Documentation](https://www.php.net/docs.php) for server-side programming.
-- [MySQL Documentation](https://dev.mysql.com/doc/) for database management.
-- [W3Schools](https://www.w3schools.com/) for HTML, CSS, and JavaScript tutorials.
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/joshua14134/supercar.git
+cd supercar
+```
+
+### 2️⃣ Create Database
+
+* Open phpMyAdmin
+* Create a database (e.g., `supercar_db`)
+* Import the provided SQL file
+
+### 3️⃣ Configure Database Connection
+
+Open `config.php` and update:
+
+```php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "superwheel";
+```
+
+### 4️⃣ Run the Project
+
+* Move folder to `htdocs` (XAMPP)
+* Start Apache & MySQL
+* Visit:
+
+```
+http://localhost/supercar
+```
 
 ---
+
+## 🔒 Security Enhancements (Recommended)
+
+For production deployment:
+
+* Use `password_hash()` for storing passwords
+* Implement prepared statements (PDO/MySQLi)
+* Add CSRF protection
+* Validate and sanitize inputs
+* Regenerate session IDs on login
+
+---
+
+## 🚀 Future Improvements
+
+* Online Payment Gateway Integration
+* Email Verification System
+* Product Search & Filters
+* Wishlist Feature
+* Sales Analytics Dashboard
+* Order Tracking System
+
+---
+
+## 👨‍💻 Developer
+
+**Joshua Greg Colao**
