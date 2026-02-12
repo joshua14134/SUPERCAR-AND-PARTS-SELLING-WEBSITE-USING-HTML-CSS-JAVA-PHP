@@ -68,7 +68,7 @@ Administrators can:
 ### 🏠 Home Page
 
 <p align="center">
-  <img src="assets/screenshots/home.png" width="900">
+  <img src="home.png" width="900">
 </p>
 
 ---
@@ -76,7 +76,7 @@ Administrators can:
 ### 🔐 Login Page
 
 <p align="center">
-  <img src="assets/screenshots/login.png" width="900">
+  <img src="login.png" width="900">
 </p>
 
 ---
@@ -84,7 +84,7 @@ Administrators can:
 ### 🛠️ Service Page
 
 <p align="center">
-  <img src="assets/screenshots/service.png" width="900">
+  <img src="service.png" width="900">
 </p>
 
 ---
@@ -92,7 +92,7 @@ Administrators can:
 ### 👤 User Profile
 
 <p align="center">
-  <img src="assets/screenshots/profile.png" width="900">
+  <img src="profile.png" width="900">
 </p>
 
 ---
@@ -100,7 +100,7 @@ Administrators can:
 ### 📊 Admin Dashboard
 
 <p align="center">
-  <img src="assets/screenshots/admin.png" width="900">
+  <img src="admin.png" width="900">
 </p>
 
 ---
