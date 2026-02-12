@@ -1,0 +1,127 @@
+/* -------- GLOBAL BACKGROUND -------- */
+body{
+    background: radial-gradient(circle at top,#14001f,#000);
+    color:#fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* -------- SECTION TITLE -------- */
+.section__title{
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:50px;
+    background:linear-gradient(90deg,#00f5ff,#a855f7);
+    background-clip:text;
+    color:transparent;
+}
+
+/* -------- CARD STYLE -------- */
+.popular__card,
+.featured__card{
+    background:rgba(255,255,255,0.04);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:20px;
+    transition:.35s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Hover Lift Effect */
+.popular__card:hover,
+.featured__card:hover{
+    transform:translateY(-12px) scale(1.02);
+    box-shadow:0 25px 60px rgba(0,255,255,.25);
+}
+
+/* Glow Sweep Animation */
+.popular__card::before,
+.featured__card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,transparent,rgba(0,255,255,.15),transparent);
+    opacity:0;
+    transition:.4s;
+}
+
+.popular__card:hover::before,
+.featured__card:hover::before{
+    opacity:1;
+}
+
+/* -------- IMAGES -------- */
+.popular__img,
+.featured__img{
+    transition:transform .5s ease;
+    filter:drop-shadow(0 10px 25px rgba(0,0,0,.6));
+}
+
+.popular__card:hover .popular__img,
+.featured__card:hover .featured__img{
+    transform:scale(1.08);
+}
+
+/* -------- PRICE STYLE -------- */
+.popular__price,
+.featured__price{
+    color:#00f5ff;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* -------- BUTTON -------- */
+.popular__button{
+    background:linear-gradient(135deg,#00f5ff,#7c3aed);
+    border:none;
+    border-radius:50%;
+    padding:14px;
+    color:#fff;
+    transition:.3s;
+}
+
+.popular__button:hover{
+    transform:scale(1.2);
+    box-shadow:0 0 20px #00f5ff;
+}
+
+/* -------- BRAND TITLE -------- */
+.brand-title{
+    font-size:1.8rem;
+    margin-bottom:20px;
+    border-left:4px solid #00f5ff;
+    padding-left:10px;
+}
+
+/* -------- FILTER BUTTONS -------- */
+.featured__item{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,.1);
+    padding:10px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.featured__item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 12px rgba(0,255,255,.4);
+}
+
+.active-featured{
+    background:linear-gradient(135deg,#00f5ff,#7c3aed);
+}
+
+/* -------- SWIPER ARROWS -------- */
+.swiper-button-next,
+.swiper-button-prev{
+    color:#00f5ff !important;
+}
+
+/* -------- RESPONSIVE -------- */
+@media(max-width:768px){
+    .section__title{
+        font-size:2rem;
+    }
+}
