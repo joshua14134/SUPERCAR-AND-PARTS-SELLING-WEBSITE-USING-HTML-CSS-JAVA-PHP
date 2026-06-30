@@ -87,15 +87,6 @@ This project demonstrates practical implementation of web development concepts i
 <p align="center">
 <img src="login.png" width="900">
 </p>
-
----
-
-## 🛒 Shopping Page
-
-<p align="center">
-<img src="buy.png" width="900">
-</p>
-
 ---
 
 ## 🚘 Services
