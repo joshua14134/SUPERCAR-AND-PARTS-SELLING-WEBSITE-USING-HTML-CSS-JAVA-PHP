@@ -1,70 +1,80 @@
-# 🚗 Supercar E-Commerce Platform
+# 🚗 Supercar & Accessories E-Commerce Website
 
 <p align="center">
-  <img src="banner.png" alt="Supercar Banner" width="100%">
+  <img src="banner.png" alt="Supercar E-Commerce Banner" width="100%">
 </p>
 
 <p align="center">
-  <b>A full-stack e-commerce platform for buying luxury supercars and automotive accessories.</b>
+  <strong>A Full-Stack Luxury Supercar & Automotive Accessories E-Commerce Platform built using PHP and MySQL.</strong>
 </p>
 
 <p align="center">
-Built with PHP • MySQL • HTML • CSS • JavaScript
+
+![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 </p>
 
 ---
 
-## 📖 About
+# 📖 Overview
 
-The **Supercar E-Commerce Platform** is a full-stack web application that enables users to browse, purchase, and manage luxury vehicles and automotive accessories through a modern online shopping experience.
+The **Supercar & Accessories E-Commerce Website** is a full-stack web application developed for buying luxury supercars and automotive accessories online.
 
-The system also includes an administrator dashboard for managing products, users, inventory, and customer orders.
+The application provides a secure shopping experience with user authentication, shopping cart management, order processing, and an administrator dashboard for managing products, customers, and inventory.
 
-This project demonstrates full-stack web development concepts including authentication, CRUD operations, session management, shopping cart functionality, and database integration.
+This project demonstrates practical implementation of web development concepts including authentication, CRUD operations, session management, and MySQL database integration.
 
 ---
 
 # ✨ Features
 
-### Customer
+## 👤 Customer Module
 
-- Secure User Registration & Login
+- User Registration
+- Secure Login & Logout
+- Profile Management
 - Browse Luxury Cars
 - Browse Accessories
 - Shopping Cart
 - Checkout System
-- User Profile Management
 - Order Confirmation
-- Responsive Interface
+- Responsive User Interface
 
-### Administrator
+---
 
-- Secure Admin Login
+## 🛠 Admin Module
+
+- Admin Authentication
 - Dashboard Overview
-- Product Management
-- Inventory Management
+- Add Products
+- Edit Products
+- Delete Products
 - User Management
+- Inventory Management
 - Order Monitoring
 
 ---
 
-# 🛠 Tech Stack
+# 🛠 Technology Stack
 
-| Technology | Used |
-|------------|------|
-| HTML5 | ✅ |
-| CSS3 | ✅ |
-| JavaScript | ✅ |
-| PHP | ✅ |
-| MySQL | ✅ |
-| Apache (XAMPP) | ✅ |
-| Git & GitHub | ✅ |
+| Category | Technology |
+|----------|------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | PHP |
+| Database | MySQL |
+| Web Server | Apache (XAMPP/WAMP) |
+| Version Control | Git & GitHub |
 
 ---
 
-# 📷 Screenshots
+# 📸 Project Screenshots
 
-## Home Page
+## 🏠 Home Page
 
 <p align="center">
 <img src="home.png" width="900">
@@ -72,7 +82,7 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-## Login
+## 🔐 Login Page
 
 <p align="center">
 <img src="login.png" width="900">
@@ -80,7 +90,7 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-## Products
+## 🛒 Shopping Page
 
 <p align="center">
 <img src="buy.png" width="900">
@@ -88,7 +98,7 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-## Services
+## 🚘 Services
 
 <p align="center">
 <img src="service.png" width="900">
@@ -96,7 +106,7 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-## User Profile
+## 👤 User Profile
 
 <p align="center">
 <img src="profileuser.png" width="900">
@@ -104,7 +114,7 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-## Admin Dashboard
+## 📊 Admin Dashboard
 
 <p align="center">
 <img src="adminlogin.png" width="900">
@@ -112,27 +122,36 @@ This project demonstrates full-stack web development concepts including authenti
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation
 
-### Clone Repository
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/joshua14134/supercar.git
+```
+
+```bash
 cd supercar
 ```
 
-### Configure Database
+---
 
-1. Start Apache & MySQL using XAMPP.
-2. Create a database named:
+## 2. Import Database
+
+- Open **phpMyAdmin**
+- Create a database named:
 
 ```
 supercar_db
 ```
 
-3. Import the SQL file.
+- Import the SQL file included in the project.
 
-4. Update `config.php`.
+---
+
+## 3. Configure Database
+
+Open **config.php** and update:
 
 ```php
 $servername = "localhost";
@@ -141,13 +160,19 @@ $password = "";
 $database = "supercar_db";
 ```
 
-5. Move the project into:
+---
+
+## 4. Run Project
+
+- Copy the project folder to:
 
 ```
 xampp/htdocs/
 ```
 
-6. Open your browser:
+- Start **Apache** and **MySQL**.
+
+Open:
 
 ```
 http://localhost/supercar
@@ -155,61 +180,44 @@ http://localhost/supercar
 
 ---
 
-# 📂 Modules
+# 🔒 Security Features
 
-### User Module
-
-- Authentication
-- Product Browsing
-- Shopping Cart
-- Checkout
-- Order Management
-- User Profile
-
-### Admin Module
-
-- Dashboard
-- Product CRUD
-- User CRUD
-- Inventory Management
-
----
-
-# 🔒 Security
-
-- Session Authentication
-- Login Validation
-- Access Control
+- Session-based Authentication
+- User Login Validation
 - Database Connectivity
-- User Session Management
+- Input Validation
+- Access Control for Admin Pages
 
 ---
 
-# 🚀 Future Scope
+# 🚀 Future Improvements
 
 - Online Payment Gateway
 - Email Verification
 - Wishlist
-- Product Search
-- Filters
-- Reviews & Ratings
+- Product Reviews & Ratings
+- Search & Advanced Filters
 - Order Tracking
-- REST API
-- Mobile App
-- Sales Analytics
+- Sales Reports
+- Responsive Admin Dashboard
+- Dark Mode
+- REST API Integration
 
 ---
 
-# 🎯 Learning Outcomes
+# 📚 Learning Outcomes
 
-- Full-Stack Web Development
-- PHP & MySQL
+This project demonstrates:
+
+- PHP CRUD Operations
+- MySQL Database Design
+- Session Management
 - Authentication System
-- CRUD Operations
-- Session Handling
-- Database Design
-- E-Commerce Workflow
+- Shopping Cart Logic
 - Responsive Web Design
+- Admin Dashboard Development
+- E-Commerce Workflow
+- Full-Stack Web Development
 
 ---
 
@@ -217,7 +225,7 @@ http://localhost/supercar
 
 **Joshua Greg Colaco**
 
-GitHub: https://github.com/joshua14134
+GitHub: **https://github.com/joshua14134**
 
 ---
 
@@ -227,6 +235,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## ⭐ Show Your Support
+## ⭐ Support
 
-If you like this project, consider giving it a **Star ⭐** on GitHub.
+If you found this project useful, consider giving it a **⭐ Star** on GitHub!
